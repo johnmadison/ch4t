@@ -1,0 +1,239 @@
+@font-face {
+    font-family: console;
+    src: url(clacon.ttf);
+}
+
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family: console !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 300%;
+}
+
+.login.page .usernameInput {
+  font-size: 300%;
+  font-family: console;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+  font-size: 300%;
+}
+
+/* Chat page */
+
+.chat.page {
+  display: none;
+}
+
+/* Font */
+
+.messages {
+  font-size: 250%;
+}
+
+.inputMessage {
+  font-size: 300%;
+  color: #00FF00;
+}
+
+.log {
+  color: #d3d3d3;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Messages */
+
+.chatArea {
+	height: 100%;
+	padding-bottom: 60px;
+	background-color: black !important;
+	overflow: hidden;
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+
+  color: #00FF00;
+  padding-right: 17px;
+}
+#element::-webkit-scrollbar { 
+    display: none; 
+}
+
+.message.typing .messageBody {
+  color: #FF0000;
+}
+
+.message:hover{
+outline: 1px solid white;
+}
+
+.message:hover .timestamp{
+display: inline-block;
+}
+
+.username {
+  font-weight: 500;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.timestamp {
+font-size: 50%;
+margin-left: 20px;
+display: none;
+}
+
+
+/* Input */
+
+.inputMessage {
+  border-top: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  outline: none;
+  font-family: console;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  color: #00FF00;
+  z-index: 999;
+}
+
+.overlay{
+z-index: 99;
+height:100%;
+width: 100%;
+left: 0;
+position: absolute;
+}
+
+#online{
+
+font-size: 200%;
+position: absolute;
+right: 0;
+z-index: 999;
+color: #00FF00;
+background-color: black;
+}
+
+.scrollbarcover
+{
+position: absolute;
+z-index: 998;
+right: 0;
+height: 100%;
+width: 20px;
+background-color: black;
+}
+
+#users
+{
+text-align: right;
+right:10px;
+top: 28px;
+position: absolute;
+z-index:999;
+font-size: 120%;
+background-color: grey;
+width: 120px;
+}
+#hideusers
+{
+text-align: center;
+right:10px;
+top: 28px;
+position: absolute;
+z-index:999;
+font-size: 200%;
+background-color: grey;
+width: 120px;
+}
+
+.rainbowize {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
+
+
+
+
+

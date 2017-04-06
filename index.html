@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CH4T</title>
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="shortcut icon" href="icon.png" />
+</head>
+<body >
+	
+<div class="scrollbarcover"></div>
+<div class=''>
+
+  <ul class="pages">
+    <li class="chat page">
+
+      <div class="chatArea">
+		<div id="online">users online</div>
+		<div id="users" style="display:none">user1</div>
+		<div id="hideusers">show users</div>
+        <ul class="messages"></ul>
+      </div>
+     
+      <input class="inputMessage" maxlength="144"/>
+    </li>
+    <li class="login page">
+
+      <div class="form"><div class='title'>
+		  <img src="wireframe.gif"></img>
+	</div>
+        <h1 id='title'class="title"></h1>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+	<script src="/push_notification.js"></script>
+
+
+  <script src="/main.js"></script>
+  
+<script>
+	Notification.requestPermission();
+	showText('#title', 'Enter your username:', 0,75);
+</script>
+
+  </div>
+</body>
+</html>
